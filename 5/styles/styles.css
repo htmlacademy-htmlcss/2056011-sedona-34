@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url(fonts/ptsans-400.woff2);
+    src: url(../fonts/ptsans-400.woff2);
     font-display: swap;
 }
 
@@ -10,7 +10,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url(fonts/ptsans-700.woff2);
+    src: url(../fonts/ptsans-700.woff2);
     font-display: swap;
 }
 
@@ -31,6 +31,7 @@ body {
 .navigation-link {
     text-decoration: none;
     text-align: center;
+    color: #000000;
 }
 
 .button {
@@ -43,7 +44,7 @@ body {
 
 .button-brown {
     color: #ffffff;
-    background-color: brown;
+    background-color: #756157;
     text-align: center;
 }
 
@@ -51,16 +52,26 @@ body {
     color: #333333;
 }
 
+.reasons {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
 .information {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+
 }
 
 .advantages-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+    text-transform: uppercase;
 }
 
 .advantages-title-white {
@@ -72,8 +83,17 @@ body {
     color: #ffffff;
 }
 
+.advantages-description-black {
+    color: #000000;
+}
+
+.advantages-item {
+    text-align: center;
+}
+
 .advantages-item-description {
     background-color: #82B3D3;
+    text-align: center;
 }
 
 .advantages-item-grey {
@@ -99,6 +119,9 @@ body {
 
 .information-hotel {
     font-size: 20px;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
 }
 
 .information-hotel-white {
@@ -106,6 +129,7 @@ body {
 }
 
 .button-subscribe {
+    font-family: "PT Sans", sans-serif;
     font-size: 20px;
     line-height: 36px;
     color: #ffffff;
@@ -116,6 +140,7 @@ body {
     font-size: 40px;
     line-height: 40px;
     text-decoration: none;
+    color: #000000;
 }
 
 .filters {
@@ -165,10 +190,15 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+    color: #000000;
+}
+
+.product-card-link {
+    text-decoration: none;
 }
 
 .button-green {
-    background-color: green;
+    background-color: #7DB54F;
     color: #ffffff;
 }
 
@@ -185,8 +215,8 @@ body {
 
 .pagination-link {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 36px;
     text-decoration: none;
     background-color: #82B3D3;
     color: #ffffff;
