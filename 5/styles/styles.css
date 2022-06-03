@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/ptsans-400.woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/ptsans-700.woff2);
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.page-header {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.navigation-link {
+    text-decoration: none;
+    text-align: center;
+}
+
+.button {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button-brown {
+    color: #ffffff;
+    background-color: brown;
+    text-align: center;
+}
+
+.reasons, .advantages-description, .information-hotel {
+    color: #333333;
+}
+
+.information {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.advantages-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.advantages-title-white {
+    color: #ffffff;
+    
+}
+
+.advantages-description-white {
+    color: #ffffff;
+}
+
+.advantages-item-description {
+    background-color: #82B3D3;
+}
+
+.advantages-item-grey {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-blue-grey {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.button-brown-search{
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.information-subscribe {
+    color: #ffffff;
+}
+
+.subscribe {
+    background-image: url("../images/subscribe.png");
+}
+
+.information-hotel {
+    font-size: 20px;
+}
+
+.information-hotel-white {
+    color: #ffffff;
+}
+
+.button-subscribe {
+    font-size: 20px;
+    line-height: 36px;
+    color: #ffffff;
+    background-color: #82B3D3;
+}
+
+.contact-phone {
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.filters {
+    background-image: url("../images/sedona-hotels-background.jpg");
+    color:#ffffff
+}
+
+.filters-header-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px; 
+}
+
+.breadcrumbs-link {
+    font-size: 16px;
+}
+
+.catalog-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.button-blue {
+    background-color: #82B3D3;
+    color: #ffffff;
+    border:rgba(130, 179, 211, 0);
+}
+
+.button-light {
+    font-size: 16px;
+    line-height: 20px;
+    background-color: rgba(130, 179, 211, 0);
+    border:rgba(130, 179, 211, 0);
+    color: #ffffff;
+}
+
+.information-result {
+    text-transform: uppercase;
+}
+
+.select-control {
+    color: #333333;
+}
+
+.product-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.button-green {
+    background-color: green;
+    color: #ffffff;
+}
+
+.hotel-type, .product-card-price, .hotel-number {
+    color: #333333;
+}
+
+.rate {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.pagination-link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    background-color: #82B3D3;
+    color: #ffffff;
+}
+
+.pagination-current {
+    background-color: #F2F2F2;
+    color: #000000;
+}
+
+.information-subscribe-black {
+    color: #000000;
+}
+
+.information-hotel-black {
+    color: #333333;
+}
