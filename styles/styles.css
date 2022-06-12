@@ -23,7 +23,7 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
-    background-color: #e5e5e5;
+    background-color: #f2f2f2;
     color: #000000;
 }
 
@@ -102,8 +102,8 @@ body {
 }
 
 .main-index-welcome {
-    background-image: url("../images/sedona-background.jpg");
-    back-ground-repeat: no-repeat;
+    
+    background-repeat: no-repeat;
 }
 
 .main-container {
@@ -128,9 +128,16 @@ body {
     text-align: center;
 }
 
+.empty-background {
+    height: 485px;
+    background-image: url("../images/sedona-background.jpg");
+}
+
 .advantages-list {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .advantages-title {
@@ -337,7 +344,7 @@ body {
 
 .pagination-list {
     display: flex;
-    margin-right: 300px;
+    margin-right: auto;
 }
 
 .pagination-item {
