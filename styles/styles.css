@@ -424,27 +424,22 @@ body {
 }
 
 .product-list {
-    display: flex;
-    width: 1056px;
-    margin: 0;
-    padding: 0;
-    margin-left: 70px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    column-gap: 18px;
 }
 
 .product-card {
-    width: 340px;
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
 }
 
 .product-card-link {
     margin: 0 auto;
 }
 
-.product-card:not(:nth-child(3n)) {
-    margin-right: 9px;
-}
+
 
 .container-catalog {
     display: flex;
