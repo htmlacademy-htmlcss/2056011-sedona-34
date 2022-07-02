@@ -921,5 +921,19 @@ h3 {
     background-position: center;
     cursor: pointer;
     border-radius: 50%;
+}
 
+.modal-title {
+    margin: 0;
+    margin-bottom: 63px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.modal-container-close {
+    display: none;
 }*/
