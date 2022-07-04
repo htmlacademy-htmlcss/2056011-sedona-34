@@ -44,16 +44,13 @@ h3 {
     margin: 0 auto;
     width: 1200px;
     background-color: #ffffff;
-    box-shadow: 0 0 15 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page-header {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    display: flex;
-    width: 1200px;
-    align-items: center;
     position: relative;
 }
 
@@ -187,6 +184,7 @@ h3 {
     background-size: 1200px 57px, 1200px 485px;
     background-repeat: no-repeat, no-repeat;
     background-position: bottom, center;
+    text-align: center;
 }
 
 /*.welcome-background-welcome {
@@ -568,6 +566,7 @@ h3 {
     align-items: center;
     margin-top: 50px;
     margin-left: 72px;
+    margin-bottom: 57px;
 }
 
 .sort {
@@ -623,7 +622,6 @@ h3 {
 
 .product-card-link {
     text-decoration: none;
-    margin-left: 20px;
 }
 
 .button-green {
@@ -655,6 +653,8 @@ h3 {
     width: 160px;
     text-align: center;
     background-color: #F2F2F2;
+    padding-top: 9px;
+    padding-bottom: 8px;
 }
 
 .pagination {
@@ -665,6 +665,8 @@ h3 {
 }
 
 .pagination-list {
+    margin: 0;
+    padding: 0;
     display: flex;
     margin-right: auto;
     list-style-type: none;
@@ -815,15 +817,26 @@ h3 {
     flex-direction: column;
 }
 
+.cards-list {
+    margin: auto;
+    border-bottom: 1px solid #E6E6E6;
+    margin-bottom: 30px;
+}
+
 .product-list {
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(3, 340px);
     column-gap: 18px;
     list-style-type: none;
+    padding-bottom: 66px;
+    width: 1056px;
 }
 
 .product-card {
-    padding-top: 20px;
+    padding: 20px;
+    width: 300px;
 }
 
 .container-catalog {
@@ -833,7 +846,7 @@ h3 {
     margin: 0 auto;
     width: 1200px;
     background-color: #ffffff;
-    box-shadow: 0 0 15 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .hotel-type {
@@ -849,30 +862,31 @@ h3 {
     width: 140px;
     padding-top: 9px;
     padding-bottom: 9px;
+    margin-right: 20px;
 }
 
-.button-card:not(:nth-child(2)) {
-    margin-right: 20px;
+.button-card-favored {
+    margin: 0;
+    margin-bottom: 16px;
 }
 
 .stars {
     display: flex;
     width: 140px;
+    
 }
 
 .star {
     width: 18px;
     background-image: url(../images/star.svg);
     background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
+    background-position: center;
     margin-right: 6px;
 }
 
 .card-information {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 20px;
 }
 
 .hotel-total {
