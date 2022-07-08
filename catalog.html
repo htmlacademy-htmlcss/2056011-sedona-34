@@ -82,20 +82,26 @@
                             <ul class="catalog-filter-structure">
                                 <li class="catalog-filter-item">
                                     <label class="control">
-                                        <input type="checkbox" class="control-input" name="pool" checked>
-                                        Бассейн
+                                        <input type="checkbox" class="visually-hidden control-input" name="pool" checked>
+                                        <span class="control-mark">
+                                        </span>
+                                        <span class="control-label">Бассейн</span>
                                     </label>
                                 </li>
                                 <li class="catalog-filter-item">
                                     <label class="control">
-                                        <input type="checkbox" class="control-input" name="parking-lot" checked>
-                                        Парковка
+                                        <input type="checkbox" class="visually-hidden control-input" name="parking-lot" checked>
+                                        <span class="control-mark">  
+                                        </span>
+                                        <span class="control-label">Парковка</span>
                                     </label>
                                 </li>
                                 <li class="catalog-filter-item">
                                     <label class="control">
-                                        <input type="checkbox" class="control-input" name="wi-fi">
-                                        Wi-Fi
+                                        <input type="checkbox" class="visually-hidden control-input" name="wi-fi" checked>
+                                        <span class="control-mark">
+                                        </span>
+                                        <span class="control-label">Wi-Fi</span>
                                     </label>
                                 </li>
                             </ul>
@@ -105,25 +111,56 @@
                             <ul class="catalog-filter-type">
                                 <li class="catalog-filter-item">
                                     <label class="control">
-                                        <input type="radio" class="control-input" name="prodact-group" value="hotel" checked>
-                                        Гостиница
+                                        <input type="radio" class="visually-hidden control-input" name="prodact-group" value="hotel" checked>
+                                        <span class="control-radio">
+                                        </span>
+                                        <span class="control-label">Гостиница</span>
                                     </label>
                                 </li>
                                 <li class="catalog-filter-item">
                                     <label class="control">
-                                        <input type="radio" class="control-input" name="prodact-group" value="motel">
-                                        Мотель
+                                        <input type="radio" class="visually-hidden control-input" name="prodact-group" value="motel">
+                                        <span class="control-radio">
+                                        </span>
+                                        <span class="control-label">Мотель</span>
                                     </label>
                                 </li>
                                 <li class="catalog-filter-item">
                                     <label class="control">
-                                        <input type="radio" class="control-input" name="prodact-group" value="appartment">
-                                        Аппартаменты
+                                        <input type="radio" class="visually-hidden control-input" name="prodact-group" value="appartment">
+                                        <span class="control-radio">
+                                        </span>
+                                        <span class="control-label">Аппартаменты</span>
                                     </label>
                                 </li>
                             </ul>
                         </fieldset>
-                    </div> 
+                    </div>
+                    <fieldset class="prices">
+                        <legend class="price-choose">Стоимость, ₽:</legend>
+                        <div class="range">
+                            <div class="range-wrapper-inputs">
+                                <label class="price-choose-label">
+                                    <input class="range-input range-input-from" type="number" value="0" name="min-price">
+                                    <div class="price-from">от</div>
+                                </label>
+                                <label class="price-choose-label">
+                                    <input class="range-input" type="number" value="9000" name="min-price">
+                                    <div class="price-from">до</div>
+                                </label>
+                            </div>
+                            <div class="price-line">
+                                <div class="range-scale"></div>
+                                <div class="range-bar" style="left: 0px; width: 268px">
+                                    <button type="button" class="range-toggle toggle-min">
+                                    </button>
+                                    <button type="button" class="range-toggle toggle-max">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
                     <div class="manage">
                         <button class="button button-blue button-filter" type="submit">Применить</button>
                         <button class="button-light" type="reset">Сбросить</button>
