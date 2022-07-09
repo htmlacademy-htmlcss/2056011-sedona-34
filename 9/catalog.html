@@ -142,11 +142,12 @@
                         <div class="range">
                             <div class="range-wrapper-inputs">
                                 <label class="price-choose-label">
-                                    <input class="range-input range-input-from" type="number" value="0" name="min-price">
                                     <div class="price-from">от</div>
+                                    <input class="range-input range-input-left range-input-from" type="number" value="0" name="min-price">
+                                    
                                 </label>
                                 <label class="price-choose-label">
-                                    <input class="range-input" type="number" value="9000" name="min-price">
+                                    <input class="range-input range-input-right range-input-to" type="number" value="9000" name="max-price">
                                     <div class="price-from">до</div>
                                 </label>
                             </div>
@@ -161,7 +162,6 @@
                             </div>
                         </div>
                     </fieldset>
-                    
                     <div class="manage">
                         <button class="button button-blue button-filter" type="submit">Применить</button>
                         <button class="button-light" type="reset">Сбросить</button>
@@ -172,7 +172,7 @@
         <section class="hotel-sort">
             <h2 class="visually-hidden">Поиск гостиниц</h2>
             <p class="information information-result">Найдено гостиниц: 38</p>
-            <select class="select-control" aria-label="Сортировка">
+            <select class="select select-control" aria-label="Сортировка">
                 <option value="cheap">Сначала дешевые</option>
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
@@ -295,28 +295,28 @@
                     <a href="#" class="pagination-link pagination-current">1</a>
                 </li>
                 <li class="pagination-item">
-                    <a href="#" class="pagination-link">2</a>
+                    <a href="#" class="pagination-link pagination-rest">2</a>
                 </li>
                 <li class="pagination-item">
-                    <a href="#" class="pagination-link">3</a>
+                    <a href="#" class="pagination-link pagination-rest">3</a>
                 </li>
                 <li class="pagination-item">
-                    <a href="#" class="pagination-link">4</a>
+                    <a href="#" class="pagination-link pagination-rest">4</a>
                 </li>
                 <li class="pagination-item">
-                    <a href="#" class="pagination-link">...</a>
+                    <a href="#" class="pagination-link pagination-rest">...</a>
                 </li>
                 <li class="pagination-item">
-                    <a href="#" class="pagination-link">10</a>
+                    <a href="#" class="pagination-link pagination-rest">10</a>
                 </li>
             </ul>
             <p class="hotel-total">Гостиниц на странице:</p>
-            <select class="hotel-number">
+            <select class="hotel-number select">
                 <option class="hotel-number-choose" value="cheap">1</option>
-                <option value="cheap">2</option>
-                <option value="cheap">3</option>
-                <option value="cheap">4</option>
-                <option value="cheap">5</option>
+                <option class="hotel-number-choose" value="cheap">2</option>
+                <option class="hotel-number-choose" value="cheap">3</option>
+                <option class="hotel-number-choose" value="cheap">4</option>
+                <option class="hotel-number-choose" value="cheap">5</option>
             </select>
         </section>
         <section class="subscribe-white">
@@ -327,7 +327,7 @@
                 <label for="email">
                     <input class="email-input" type="email" id="email" name="email" placeholder="Ваш e-mail">
                 </label>
-                <button class="button button-blue button-subscribe" type="submit">Подписаться</button>
+                <button class="button button-subscribe" type="submit">Подписаться</button>
             </form>
         </section>
         <footer class="page-footer">

@@ -140,7 +140,7 @@
                     <label for="email">
                         <input class="email-input" type="email" id="email" name="email" placeholder="Ваш e-mail">
                     </label>
-                    <button class="button button-blue button-subscribe" type="submit">Подписаться</button>
+                    <button class="button button-subscribe" type="submit">Подписаться</button>
                 </form>
             </section>
         </main>
@@ -195,7 +195,7 @@
         </footer>
         <div class="modal-container madal-container-close">
             <div class="modal modal-auth">
-                <button class="modal-close-button">
+                <button type="button" class="modal-close-button">
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
                     </svg>
@@ -207,57 +207,53 @@
                         <fieldset class="modal-forms">
                             <legend class="visually-hidden">Информация о заселении</legend>
                             <div class="date-hotel">
-                                <p class="date-hotel-title">Дата заезда:</p>
-                                <label for="arrival"></label>
-                                <input class="data-hotel-input" type="text" id="arrival" name="date" value="27 апреля 2020">
-                                <button class="calendar"></button>
+                                <label class="date-hotel-title">Дата заезда:</label>
+                                <input class="date-hotel-input" type="text" id="arrival" name="date" value="27 апреля 2020">
+                                <button type="button" class="calendar"></button>
                             </div>
                             <p class="error error-yes">Мы не можем отправить вас в прошлое.</p>
                             <div class="date-hotel">
-                                <p class="date-hotel-title">Дата выезда:</p>
-                                <label for="departure"></label>
-                                <input class="data-hotel-input" type="text" id="departure" name="date" value="1 сентября 2021">
-                                <button class="calendar"></button>
+                                <label class="date-hotel-title">Дата выезда:</label>
+                                <input class="date-hotel-input" type="text" id="departure" name="date" value="1 сентября 2021">
+                                <button type="button" class="calendar"></button>
                             </div>
                             <p class="error">На эти даты есть свободные номера. Пока есть.</p>
                             <div class="modal-people">
                                 <div class="date-hotel-people date-hotel-adults">
-                                    <p class="date-hotel-title">Взрослые:</p>
-                                    <label for="adults"></label>
-                                    <input class="people-number" type="number" id="adults" name="date" value="27 апреля 2021">
-                                    <button class="button-sign button-adults-minus">
+                                    <label class="date-hotel-title">Взрослые:</label>
+                                    <input class="people-number" type="number" id="adults" name="date" value="2">
+                                    <button type="button" class="button-sign button-adults-minus">
                                         <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
                                         </svg>                                            
                                     </button>
-                                    <button class="button-sign button-adults-plus">
+                                    <button type="button" class="button-sign button-adults-plus">
                                         <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
                                         </svg>                                            
                                     </button>
                                 </div>
                                 <div class="date-hotel-people date-hotel-children">
-                                    <span class="label-form"></span>
-                                        <p class="date-hotel-title" aria-labelledby="tooltip-label">Дети:</p>
+                                    <span class="label-form">
+                                        <label class="date-hotel-title" aria-labelledby="tooltip-label">Дети:</label>
                                         <span class="tooltip">
                                             <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                                         </span>
                                     </span>
-                                    <label for="children"></label>
-                                    <input class="people-number" type="number" id="children" name="date" value="27 апреля 2021">
-                                    <button class="button-sign button-children-minus">
+                                    <input class="people-number" type="number" id="children" name="date" value="1">
+                                    <button type="button" class="button-sign button-children-minus">
                                         <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
                                         </svg>                                            
                                     </button>
-                                    <button class="button-sign button-children-plus">
+                                    <button type="button" class="button-sign button-children-plus">
                                         <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
                                         </svg>                                            
                                     </button>
                                 </div>
                             </div>
-                            <button class="button button-blue button-modal">Найти
+                            <button type="button" class="button button-blue button-modal">Найти
                             </button>
                         </fieldset>
                     </form>
