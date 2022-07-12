@@ -67,7 +67,7 @@
                             <span class="visually-hidden">Главная</span>
                         </a>
                     </li>
-                    <li class="breadcrumbs-item breadcrumbs-arrow"></li>
+                    
                     <li class="breadcrumbs-item">
                         <a class="breadcrumbs-link breadcrumbs-link-hotel">Гостиницы</a>
                     </li>
@@ -143,7 +143,6 @@
                                 <label class="price-choose-label">
                                     <div class="price-from">от</div>
                                     <input class="range-input range-input-left range-input-from" type="number" value="0" name="min-price">
-                                    
                                 </label>
                                 <label class="price-choose-label">
                                     <div class="price-from">до</div>
@@ -155,7 +154,9 @@
                                 <div class="range-bar" style="left: 0px; width: 220px">
                                     <button type="button" class="range-toggle toggle-min">
                                     </button>
+                                    <span class="visually-hidden">Минимум</span>
                                     <button type="button" class="range-toggle toggle-max">
+                                    <span class="visually-hidden">Максимум</span>
                                     </button>
                                 </div>
                             </div>
@@ -221,7 +222,7 @@
                             <p class="hotel-type">Гостиница</p>
                             <p class="product-card-price">От 4000 ₽</p>
                             <a href="#" class="button button-brown button-card">Подробнее</a>
-                            <a href="#" class="button button-blue button-card button-card-favored">В избранное</a>
+                            <a href="#" class="button button-blue button-card">В избранное</a>
                             <div class="stars">
                                 <p class="star"></p>
                                 <p class="star"></p>
@@ -240,7 +241,7 @@
                         <p class="hotel-type">Гостиница</p>
                         <p class="product-card-price">От 5000 ₽</p>
                         <a href="#" class="button button-brown button-card">Подробнее</a>
-                        <a href="#" class="button button-green button-card button-card-favored">В избранном</a>
+                        <a href="#" class="button button-green button-card">В избранном</a>
                         <div class="stars">
                             <p class="star"></p>
                             <p class="star"></p>
@@ -259,7 +260,7 @@
                         <p class="hotel-type">Гостиница</p>
                         <p class="product-card-price">От 2500 ₽</p>
                         <a href="#" class="button button-brown button-card">Подробнее</a>
-                        <a href="#" class="button button-blue button-card button-card-favored">В избранное</a>
+                        <a href="#" class="button button-blue button-card">В избранное</a>
                         <div class="stars">
                             <p class="star"></p>
                             <p class="star"></p>
@@ -277,7 +278,7 @@
                         <p class="hotel-type">Гостиница</p>
                         <p class="product-card-price">От 1500 ₽</p>
                         <a href="#" class="button button-brown button-card">Подробнее</a>
-                        <a href="#" class="button button-blue button-card button-card-favored">В избранное</a>
+                        <a href="#" class="button button-blue button-card">В избранное</a>
                         <div class="stars">
                             <p class="star"></p>
                             <p class="star"></p>
@@ -324,7 +325,7 @@
             <p class="information-hotel information-hotel-subscribe information-hotel-black">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
             <form class="email" action="https://echo.htmlacademy.ru/" method="post">
                 <label for="email">
-                    <input class="email-input" type="email" id="email" name="email" placeholder="Ваш e-mail">
+                    <input class="email-input" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
                 </label>
                 <button class="button button-subscribe" type="submit">Подписаться</button>
             </form>

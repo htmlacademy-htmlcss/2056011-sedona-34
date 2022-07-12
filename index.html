@@ -108,7 +108,7 @@
                     <li class="advantages-item advantages-item-grey ">
                         <h3 class="advantages-title advantage-title-svg-without">Небольшая<br>площадь</h3>
                         <p class="advantages-description-black advantages-description-card">— №3 —</p>
-                        <p class="advantages-description">Все достопримечательности находятся очень близко</p>
+                        <p class="advantages-description advantages-description-add">Все достопримечательности находятся очень близко</p>
                     </li>
                     <li class="advantages-item advantages-item-blue-grey">
                         <h3 class="advantages-title advantage-title-svg-without">Красивая<br>дорога</h3>
@@ -136,7 +136,7 @@
                 <p class="information-hotel information-hotel-subscribe information-hotel-white">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
                 <form class="email" action="https://echo.htmlacademy.ru/" method="post">
                     <label for="email">
-                        <input class="email-input" type="email" id="email" name="email" placeholder="Ваш e-mail">
+                        <input class="email-input" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
                     </label>
                     <button class="button button-subscribe" type="submit">Подписаться</button>
                 </form>
@@ -206,13 +206,14 @@
                             <legend class="visually-hidden">Информация о заселении</legend>
                             <div class="date-hotel">
                                 <label class="date-hotel-title">Дата Заезда:</label>
-                                <input class="date-hotel-input" type="text" id="arrival" name="date" value="27 апреля 2020">
+                                <input class="date-hotel-input" type="text" id="arrival" name="date" required value="27 апреля 2020">
                                 <button type="button" class="calendar"></button>
+                                <span class="visually-hidden">Календарь</span>
                             </div>
                             <p class="error error-yes">Мы не можем отправить вас в прошлое.</p>
                             <div class="date-hotel">
                                 <label class="date-hotel-title">Дата Выезда:</label>
-                                <input class="date-hotel-input" type="text" id="departure" name="date" value="1 сентября 2021">
+                                <input class="date-hotel-input" type="text" id="departure" name="date" required value="1 сентября 2021">
                                 <button type="button" class="calendar"></button>
                             </div>
                             <p class="error">На эти даты есть свободные номера. Пока есть.</p>
@@ -233,7 +234,12 @@
                                 </div>
                                 <div class="date-hotel-people date-hotel-children">
                                     <span class="label-form">
-                                        <label class="date-hotel-title" aria-labelledby="tooltip-label">Дети:</label>
+                                        <label class="date-hotel-title" aria-labelledby="tooltip-label">Дети:
+                                            <div class="children-information">
+                                                <div class="dot"></div>
+                                                <div class="line"></div>
+                                            </div>
+                                        </label>
                                         <span class="tooltip">
                                             <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                                         </span>
@@ -247,7 +253,8 @@
                                     <button type="button" class="button-sign button-children-plus">
                                         <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
-                                        </svg>                                            
+                                        </svg>
+                                        <span class="visually-hidden">Найти</span>                                            
                                     </button>
                                 </div>
                             </div>
